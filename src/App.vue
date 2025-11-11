@@ -1,18 +1,12 @@
 <template>
-  <div id="app">
-    <OrgChart />
-  </div>
+  <OrgChartComponent />
 </template>
 
 <script>
-import OrgChart from "./components/OrgChart.vue";
-export default { components: { OrgChart } };
-</script>
+import OrgChartComponent from './components/OrgChart.vue'
 
-<style>
-body {
-  background: #e3e5e9;
-  margin: 0;
-  font-family: "IBM Plex Sans", sans-serif;
+export default {
+  name: 'App',
+  components: { OrgChartComponent }
 }
-</style>
+</script>
